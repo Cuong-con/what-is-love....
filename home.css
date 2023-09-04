@@ -1,0 +1,115 @@
+
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    }
+body{
+    position: relative;
+    display: grid;
+    place-content: center;
+    min-height: 100vh;
+
+}
+canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+p {
+    margin: 0 0;
+    position: absolute;
+    font: 16px Verdana;
+    color: #eee;
+    height: 25px;
+    top: calc( 100vh - 30px );
+    text-shadow: 0 0 2px white;
+}
+p a {
+    text-decoration: none;
+    color: #aaa;
+}
+span {
+    font-size: 11px;
+}
+p > a:first-of-type {
+    font-size: 20px;
+}
+body {
+    overflow: hidden;
+}
+.message{
+    position: absolute;
+    font-size: 1.5rem;
+    top: 0;
+    left: calc( 50% - 350px);
+    text-align: center;
+    z-index: 5;
+    background-color: white;
+    padding: 30px;
+    opacity: 0;
+    cursor:default;
+    color: rgb(75, 0, 12);
+    border-radius: 15px;
+    display: grid;
+    place-content: center;
+    box-shadow: 2px 2px 25px 2px rgba(138, 208, 240, 0.37);
+}
+h1{
+    margin-bottom: 40px;
+    flex: 1;
+}
+.message span{
+    margin-bottom: 25px;
+    font-size: 1.5rem;
+    line-height: 2rem;
+    text-align: center;
+}
+.fire-work{
+    background: transparent;
+    position: relative;
+    display: none;
+}
+.message div{
+    display: flex;
+    align-items: center;
+}
+.message div img{
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    object-position: center;
+    align-items: center;
+}
+.message::after{
+    background: white;
+    content: "";
+    border-radius: 100%;
+    width: 28%;
+    position: absolute;
+    height: 50%;
+    top: -5%;
+    transform: translateY(-50%);
+    right: -150px;
+    background-image: url('avatar.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border: 2px solid beige;
+    box-shadow: 0px 0px 0px 10px rgba(0, 0, 0, 0.218);
+}
+/* .message::before{
+    background: white;
+    content: "";
+    border-radius: 100%;
+    width: 30%;
+    position: absolute;
+    height: 50%;
+    top: 50%;
+    transform: translateY(-50%);
+    right: calc((100vw - 100%) + 50px);
+    background-image: url('avatar.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+} */
